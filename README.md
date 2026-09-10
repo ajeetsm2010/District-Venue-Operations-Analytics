@@ -1,6 +1,6 @@
 # Quick Commerce Dark Store Operations Analytics
 
-An end-to-end Business Analyst project that simulates the operations of a quick-commerce platform. This project demonstrates business requirement analysis, database design, SQL analytics, and interactive Power BI dashboards to monitor operational performance across dark stores.
+An end-to-end Data Analyst project that simulates the operations of a quick-commerce platform. This project demonstrates business requirement analysis, database design, SQL analytics, and interactive Power BI dashboards to monitor operational performance across dark stores.
 
 ---
 
@@ -340,4 +340,4 @@ To simulate a real-world business monitoring workflow, an automation script was 
 
 Ajeet Yadav
 
-Business Analyst | SQL | Power BI | Python
+Data Analyst | SQL | Power BI | Python
