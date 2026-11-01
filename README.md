@@ -1,343 +1,191 @@
-# Quick Commerce Dark Store Operations Analytics
+# 🎟️ District Live Entertainment & Dining: Venue Operations & Box Office Telemetry Analytics
 
-An end-to-end Data Analyst project that simulates the operations of a quick-commerce platform. This project demonstrates business requirement analysis, database design, SQL analytics, and interactive Power BI dashboards to monitor operational performance across dark stores.
+### Partner Venue Operations | Entry SLA Diagnostics | Inventory Health
+**District by Eternal | Delhi NCR Market**
 
----
-
-## 🎥 Dashboard Demo
-
-Watch the complete dashboard walkthrough here:
-
-➡️ [Download Dashboard Demo](demo/dashboard_demo.mp4)
-
-## Project Overview
-
-The objective of this project is to analyze and monitor key operational metrics of a quick-commerce business, including:
-
-- Order Performance
-- Inventory Health
-- Rider Performance
-- Executive Business KPIs
-
-The project follows a complete analytics workflow from business documentation to dashboard development.
+[![Python](https://img.shields.io/badge/Python-Pandas%20%7C%20NumPy-yellow)](https://www.python.org/)
+[![SQL](https://img.shields.io/badge/SQL-SQLite%20%7C%20PostgreSQL-blue)](https://www.sqlite.org/)
+[![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)](https://powerbi.microsoft.com/)
+[![Analytics](https://img.shields.io/badge/Analytics-Operations%20Analytics-green)](https://en.wikipedia.org/wiki/Business_analytics)
+[![GitHub](https://img.shields.io/badge/Version%20Control-GitHub-black)](https://github.com/)
 
 ---
 
-## Tech Stack
+## 📌 1. Project Overview
 
-- Python
-- Pandas
-- Faker
-- SQL (SQLite)
-- Power BI
-- DAX
-- Power Query
-- Git & GitHub
+An end-to-end Operations and Product Analytics framework simulating live event ticketing, venue check-ins, and premium partner dining operations for **District (by Eternal)** across Delhi NCR.
 
----
+The project focuses on analyzing end-to-end commercial fulfillment, diagnosing on-ground operational bottlenecks, monitoring partner venue inventory health, and delivering executive-ready business intelligence.
 
-## Project Workflow
+The analytical framework is structured around four major operational pillars:
 
-Business Requirement Gathering
-↓
-Database Design
-↓
-Synthetic Data Generation (Python)
-↓
-SQLite Database
-↓
-SQL Analysis
-↓
-Power BI Dashboard
-↓
-Business Insights
+### 🎯 Primary Business Objectives
+
+- **Ticketing & Reservation Performance:** Analyze Gross Booking Value (GBV), booking conversion, and payment method distribution.
+- **Turnstile & Entry SLA Diagnostics:** Monitor venue check-in velocity, gate scan times, and peak-hour queue breach rates.
+- **Tiered Inventory Health:** Evaluate live inventory allocation, reserved VIP capacity, and partner table reconciliation.
+- **Executive Strategic KPIs:** Assess regional market penetration across Gurugram, Delhi, and other NCR corridors.
 
 ---
 
-## Project Architecture
+## 🎥 2. Dashboard Walkthrough
 
-```mermaid
-flowchart TD
-    A[Business Requirements] --> B[Database Design]
-    B --> C[Python Data Generation]
-    C --> D[SQLite Database]
-    D --> E[SQL Analytics]
-    E --> F[Power BI Dashboard]
-    F --> G[Business Insights]
-```
+**[▶️ Watch Interactive Dashboard Walkthrough](PASTE_YOUR_VIDEO_LINK_HERE)**
 
-## Database Tables
-
-- Orders
-- Order_Items
-- Products
-- Inventory
-- Riders
-- Stores
+*Replace the placeholder with your dashboard walkthrough video link.*
 
 ---
 
-# Dashboards
+## 🛠️ 3. Data Infrastructure & Technology Stack
 
-## 1. Operations Dashboard
-
-KPIs
-- Total Revenue
-- Total Orders
-- Total Customers
-- Average Order Value
-- Average Delivery Time
-- SLA Breach %
-
-Visuals
-- Revenue Trend
-- Revenue by Category
-- Revenue by Rider
-- Payment Mode Distribution
-- Order Status Distribution
-- Average Delivery Time by City
-
-### Dashboard Preview
-
-![Operations Dashboard](dashboard_screenshots/page1_operations.png)
+| Technology | Purpose |
+|---|---|
+| Python (Pandas, NumPy, Faker) | Synthetic generation of 5,000+ transactional and gate-scan telemetry records |
+| SQLite / PostgreSQL | Relational database architecture, data normalization, and indexing |
+| SQL | CTEs, conditional aggregations, window functions, and SLA diagnostics |
+| Power BI Desktop | Interactive operational dashboards and executive reporting |
+| DAX | Dynamic KPIs, operational measures, and performance calculations |
+| Git & GitHub | Version control and structured project repository |
 
 ---
 
-## 2. Inventory Analytics Dashboard
+## 🔄 4. Analytics Workflow & Schema Architecture
 
-KPIs
-- Total SKUs
-- Average System Stock
-- Average Physical Stock
-- Average Reserved Stock
-- Average Damaged Stock
+### End-to-End Analytics Pipeline
 
-Visuals
-- Inventory by Category
-- System vs Physical Stock
-- Stock Distribution by Store
+Business Requirements Gathering → Relational Schema Design → Synthetic Telemetry Generation (Python) → SQL Data Modeling → Power BI Intelligence → Operational Recommendations
 
-### Dashboard Preview
+### Database Schema Structure
 
-![Inventory Dashboard](dashboard_screenshots/page2_inventory.png)
+The project uses a normalized relational database architecture consisting of six primary tables:
 
----
-
-## 3. Rider Performance Dashboard
-
-KPIs
-- Total Riders
-- Average Deliveries
-- Average Delivery Time
-- SLA Performance
-
-Visuals
-- Orders by Rider
-- Delivery Time by Rider
-- Revenue by Rider
-- Rider Shift Analysis
-
-### Dashboard Preview
-
-![Rider Dashboard](dashboard_screenshots/page3_rider_sla.png)
+| Table | Description |
+|---|---|
+| `Bookings` | Core transaction metadata, including Customer ID, Venue ID, booking status, timestamps, and payment mode |
+| `Booking_Items` | Granular ticket/table items, booking quantities, and convenience surcharges |
+| `Experiences_Catalog` | Experience categories such as Concerts, Nightlife, Dining, Comedy, and Pop-ups |
+| `Inventory_Allocation` | System capacity, physical venue allocations, and reserved inventory |
+| `Gate_Personnel` | On-ground check-in and entry-scan staff telemetry |
+| `Venues` | Partner venue details, geographical corridors, and capacity limits |
 
 ---
 
+## 📊 5. Executive Dashboards & Operational Views
 
-## 4. Executive Business Summary
+The Power BI solution is structured into four executive-facing dashboards.
 
-Executive KPIs with high-level operational insights.
+### 1. Venue Operations & Entry Dashboard
 
-Visuals include:
+**Primary KPIs:**
+- Total Revenue: ₹7.0M
+- Total Bookings: 5,000
+- Average Order Value (AOV): ₹1,400
+- Average Check-in Time: 16.06 minutes
+- Entry SLA Breach Rate: 47.14%
+- Active Customers
 
-- Revenue by City
-- Orders by Category
-- Payment Mode Distribution
-- Order Status Distribution
-  
-### Dashboard Preview
+**Visual Diagnostics:**
+- Hourly Booking Trajectory
+- Revenue by Experience Category
+- Payment Gateway Distribution
+- Check-in Latency by NCR Cluster
 
-![Executive Dashboard](dashboard_screenshots/page4_executive_summary.png)
+### 2. Experience & Tiered Inventory Health Dashboard
 
----
+**Primary KPIs:**
+- Total Active SKUs / Experiences
+- Average Platform-Allocated Capacity
+- Physical Venue Capacity
+- Reserved VIP Inventory
+- Disputed / Overbooked Capacity
 
+**Visual Diagnostics:**
+- Inventory Distribution by Vertical
+- System Capacity vs Actual Venue Capacity
+- Allocation Variance across Premium Corridors
 
-## Key Business Insights
+### 3. Box Office & Gate Staff Productivity Dashboard
 
-### Revenue Performance
-- The platform generated **₹7.0 Million** in total revenue from **5,000 completed orders**, demonstrating strong business volume during the analysis period.
-- The estimated **Average Order Value (AOV)** was approximately **₹1,400 per order** (₹7M ÷ 5K orders), indicating healthy customer spending.
+**Primary KPIs:**
+- Total Active Turnstile Scanners
+- Check-in Scans per Gate
+- Gate Latency per Attendee
+- SLA Compliance Percentage
 
-### Geographic Performance
-- **Gurugram** was the highest revenue-generating city, contributing approximately **₹2.3–2.5 Million**, making it the strongest performing market.
-- **Delhi** ranked second with roughly **₹1.8–2.0 Million** in revenue.
-- **Noida, Faridabad, and Ghaziabad** generated comparatively lower revenue, highlighting opportunities for localized marketing and operational improvements.
+**Visual Diagnostics:**
+- Volume Scanned per Turnstile
+- Gate Queue Latency Trends
+- Shift-wise Peak Flow Dynamics
 
-### Delivery Performance
-- The average delivery time was **16.06 minutes**, indicating that deliveries were completed close to the expected quick-commerce SLA.
-- However, the dashboard reports an **SLA Breach Rate of 47.14%**, meaning **nearly 1 out of every 2 orders** exceeded the target delivery SLA. This represents the most critical operational improvement area.
+### 4. Executive Business Summary
 
-### Product Category Analysis
-- Orders were distributed across **five major product categories**:
-  - Beverages
-  - Dairy
-  - Grocery
-  - Personal Care
-  - Snacks
-- The category distribution appears balanced, ensuring revenue is not dependent on a single category and reducing category-specific business risk.
-
-### Order Status Analysis
-- **Delivered orders accounted for approximately 93.6%** of all orders (**around 4,680 out of 5,000 orders**), indicating strong operational execution.
-- **Cancelled and Returned orders together represented approximately 6.4%** of total orders (**around 320 orders**), suggesting opportunities to reduce order failures and improve customer satisfaction.
-
-### Executive Summary
-- The dashboard consolidates revenue, operational, inventory, and delivery KPIs into a single executive view, enabling faster data-driven business decisions.
-- Interactive filters for **City** and **Product Category** allow management to identify regional trends, compare performance, and support strategic planning.
-
-
-## Business Recommendations
-
-Based on the dashboard analysis, the following recommendations are suggested:
-
-- Reduce SLA breaches by optimizing rider allocation and delivery routes in high-risk cities.
-- Increase inventory audits to minimize stock mismatches between system and physical inventory.
-- Prioritize expansion and marketing investments in high-performing cities such as Gurugram and Delhi.
-- Improve order fulfillment processes to reduce cancellations and returns.
-- Monitor rider productivity using delivery time and order completion KPIs.
-- Use category-wise sales trends for inventory planning and demand forecasting.
-- Implement automated alerts for dark stores with high SLA breach percentages.
-
-
-
-## Power BI Features Used
-
-- Interactive KPI Cards
-- DAX Measures
-- Power Query
-- Data Modeling
-- Relationships
-- Slicers
-- Cross Filtering
-- Bar Charts
-- Donut Charts
-- Column Charts
-- Executive Dashboard Design
-- Drill-through Ready Layout
-
-
-## SQL Concepts Used
-
-- SELECT Statements
-- INNER JOIN
-- GROUP BY
-- ORDER BY
-- Aggregate Functions (SUM, COUNT, AVG)
-- CASE Statements
-- HAVING Clause
-- Data Validation Queries
-- Primary & Foreign Keys
-- Database Schema Design
-
-
-## Python Libraries Used
-
-- Pandas
-- NumPy
-- Faker
-- OpenPyXL
-- SQLite3
-
-
-## Skills Demonstrated
-
-- Business Analysis
-- Data Analysis
-- SQL
-- Power BI
-- Python
-- SQLite
-- Dashboard Development
-- Data Modeling
-- Business Documentation
-- KPI Development
-- Data Validation
-- Data Visualization
-- Git & GitHub
-
-
-
-
-## Business Documents
-
-- Business Requirements Document (BRD)
-- Project Scope
-- ER Diagram
-- Database Schema
-- Data Dictionary
-- Business Rules
+**Strategic Perspectives:**
+- Revenue by Geographic Corridor (Gurugram vs Delhi vs Peripheral NCR)
+- Category Contribution Breakdown
+- Booking Fulfillment vs Cancellation Dynamics
+- Regional Commercial Performance
 
 ---
 
-## Key Skills Demonstrated
+## 🔍 6. Critical Business Insights
 
-- Business Analysis
-- SQL
-- Data Cleaning
-- Data Modeling
-- Dashboard Design
-- KPI Development
-- Data Visualization
-- Business Documentation
-- Power BI
-- DAX
-- Power Query
+### 1. Revenue & Spend Velocity
 
----
+- Generated **₹7.0 Million in Gross Booking Value (GBV)** across 5,000 completed bookings.
+- Documented an **Average Order Value of ₹1,400**, indicating strong spending potential across curated weekend dining and live entertainment experiences.
 
-## Repository Structure
+### 2. Geographic Market Concentration
 
-```text
-data/
-database/
-docs/
-notebooks/
-powerbi/
-sql/
-dashboard_screenshots/
-```
+- **Gurugram emerged as the dominant commercial hub**, contributing approximately ₹2.3M–₹2.5M, representing around 35% of total platform GBV.
+- DLF CyberHub and Golf Course Road were the primary commercial corridors.
+- Delhi followed as the second-largest market, contributing approximately ₹1.8M–₹2.0M.
+- Noida, Faridabad, and Ghaziabad represented emerging markets with opportunities for localized partner acquisition.
 
----
+### 3. Turnstile SLA & Gate Congestion Bottleneck
 
-## Automated Alerting
+- Average attendee check-in duration: **16.06 minutes**.
+- Entry SLA Breach Rate: **47.14%**.
+- Nearly one out of every two attendees experienced entry delays beyond the defined operational SLA during peak 8 PM–10 PM weekend arrival windows.
 
-To simulate a real-world business monitoring workflow, an automation script was developed to identify high-risk dark stores based on operational performance.
+This identified venue check-in congestion as a major operational friction point.
 
-### Features
+### 4. Category Diversification
 
-- Connects to the operational database
-- Calculates SLA Breach % for every dark store
-- Flags stores exceeding the SLA threshold
-- Generates an automated Excel summary report for business users
-- Demonstrates how operational alerts can support proactive decision-making
+Bookings were distributed across five core experience verticals:
 
-**Script:** `scripts/alert_high_risk_stores.py`
+- Live Concerts & Festivals
+- Nightlife & Clubs
+- Curated Dining & Table Reservations
+- Stand-up Comedy & Theatre
+- Lifestyle Pop-ups & Experiences
 
-**Generated Report:** `High_Risk_Dark_Stores_Report.xlsx`
+A diversified category mix helps reduce dependence on individual event categories and seasonal concert demand.
 
+### 5. Fulfillment & Drop-off Integrity
 
+- **93.6% Successful Fulfillment:** 4,680 out of 5,000 bookings were successfully redeemed at partner venues.
+- **6.4% Cancellation / No-show Rate:** 320 bookings resulted in cancellations or unredeemed reservations.
 
-## Future Enhancements
-
-- Real-time SQL Server integration
-- Automated ETL pipeline
-- Predictive demand forecasting
-- Inventory optimization
-- Customer segmentation
+This highlights opportunities to improve booking fulfillment through better entry management and partner coordination.
 
 ---
 
-## Author
+## 🚀 7. Actionable Strategic Recommendations
 
-Ajeet Yadav
+### 1. Staggered Entry & Dynamic Turnstile Fast-Tracks
 
-Data Analyst | SQL | Power BI | Python
+Introduce tiered entry time slots, such as 15-minute priority arrival windows, along with dedicated fast-track lanes for eligible District Priority Pass and loyalty customers.
+
+**Expected Impact:** Reduced gate congestion and improved SLA compliance.
+
+### 2. Real-time Inventory & Table Auditing
+
+Synchronize POS and box-office capacity feeds through automated inventory reconciliation to identify discrepancies between digital platform allocations and actual venue capacity.
+
+**Expected Impact:** Reduced overbooking and improved partner coordination.
+
+### 3. Strategic Merchant Expansion
+
+Leverage Gurugram's approximately ₹2.5M GBV contribution by expanding exclusive ticketing and dining partnerships across high-density commercial corridors.
+
+**Expected Impact
