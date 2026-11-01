@@ -188,80 +188,58 @@ Synchronize POS and box-office capacity feeds through automated inventory reconc
 
 Leverage Gurugram's approximately ₹2.5M GBV contribution by expanding exclusive ticketing and dining partnerships across high-density commercial corridors.
 
-**Expected Impact
+**Expected Impact:** Increased regional market penetration and partner acquisition.
 
-4. Automated Operational Alerts
+### 4. Automated Operational Alerts
 
 Introduce automated monitoring scripts that flag venues when check-in queue SLA breach rates exceed 40%.
 
-Expected Impact: Faster identification of operational bottlenecks and timely deployment of additional gate personnel.
+**Expected Impact:** Faster identification of operational bottlenecks and timely deployment of additional gate personnel.
 
-⚙️ 8. Automated Venue Alerting Pipeline
+---
+
+## ⚙️ 8. Automated Venue Alerting Pipeline
 
 A Python-based operational alerting pipeline was developed to demonstrate automated venue performance monitoring.
 
-Key Functionalities
+### Key Functionalities
 
-Connects dynamically to the operational database.
+- Connects dynamically to the operational database.
+- Calculates entry SLA breach percentages across partner venues.
+- Identifies high-congestion venues exceeding the defined threshold of 40%.
+- Generates an executive exception report.
+- Helps operational managers prioritize venues requiring immediate intervention.
 
-Calculates entry SLA breach percentages across partner venues.
+**Generated Output:** `High_Risk_Venue_Operations_Report.xlsx`
 
-Identifies high-congestion venues exceeding the defined threshold of 40%.
+**Script Location:** `scripts/alert_high_risk_venues.py`
 
-Generates an executive exception report.
-
-Helps operational managers prioritize venues requiring immediate intervention.
-
-Generated Output: High_Risk_Venue_Operations_Report.xlsx
-
-Script Location: scripts/alert_high_risk_venues.py
-
-Business Application
+### Business Application
 
 This alerting framework enables proactive venue monitoring instead of relying entirely on manual reporting and post-event operational reviews.
 
-📈 9. Key Performance Indicators Summary
+---
 
-KPI
+## 📈 9. Key Performance Indicators Summary
 
-Observed Result
+| KPI | Observed Result |
+|---|---:|
+| Total Gross Booking Value | ₹7.0M |
+| Total Bookings | 5,000 |
+| Average Order Value | ₹1,400 |
+| Average Check-in Time | 16.06 minutes |
+| Entry SLA Breach Rate | 47.14% |
+| Successful Fulfillment Rate | 93.6% |
+| Cancellation / No-show Rate | 6.4% |
+| Gurugram GBV Contribution | Approximately 35% |
 
-Total Gross Booking Value
+*All metrics represent the simulated project dataset and its analytical outputs.*
 
-₹7.0M
+---
 
-Total Bookings
+## 📂 10. Repository Deliverables & Structure
 
-5,000
-
-Average Order Value
-
-₹1,400
-
-Average Check-in Time
-
-16.06 minutes
-
-Entry SLA Breach Rate
-
-47.14%
-
-Successful Fulfillment Rate
-
-93.6%
-
-Cancellation / No-show Rate
-
-6.4%
-
-Gurugram GBV Contribution
-
-Approximately 35%
-
-All metrics represent the simulated project dataset and its analytical outputs.
-
-📂 10. Repository Deliverables & Structure
-
+```text
 District-Venue-Operations-Analytics/
 │
 ├── data/
@@ -293,31 +271,32 @@ District-Venue-Operations-Analytics/
 │   └── Dashboard visual previews
 │
 └── README.md
+```
 
-📌 11. Project Takeaways
+---
+
+## 📌 11. Project Takeaways
 
 This project demonstrates how operational analytics, relational database modeling, and business intelligence can be combined to solve practical challenges in live entertainment, ticketing, and premium dining operations.
 
-Key Outcomes
+### Key Outcomes
 
-Developed an end-to-end operational analytics framework using 5,000+ simulated transactional and gate-scan records.
+- Developed an end-to-end operational analytics framework using 5,000+ simulated transactional and gate-scan records.
+- Analyzed ₹7.0M in Gross Booking Value across multiple experience categories.
+- Identified a 47.14% entry SLA breach rate as a major venue operations bottleneck.
+- Evaluated regional commercial performance across Delhi NCR.
+- Designed an automated Python-based venue alerting pipeline.
+- Developed executive-facing Power BI dashboards for operational monitoring and strategic decision-making.
 
-Analyzed ₹7.0M in Gross Booking Value across multiple experience categories.
+**The ultimate objective is to help District improve venue-level execution, optimize inventory utilization, strengthen partner operations, and deliver a smoother customer experience through data-driven operational intelligence.**
 
-Identified a 47.14% entry SLA breach rate as a major venue operations bottleneck.
+---
 
-Evaluated regional commercial performance across Delhi NCR.
+## 👤 Author
 
-Designed an automated Python-based venue alerting pipeline.
+**Ajeet Yadav**
 
-Developed executive-facing Power BI dashboards for operational monitoring and strategic decision-making.
+*Aspiring Data Analyst | Business Analytics | Product & Operations Analytics*
 
-The ultimate objective is to help District improve venue-level execution, optimize inventory utilization, strengthen partner operations, and deliver a smoother customer experience through data-driven operational intelligence.
+**Core Skills:** SQL | Python | Power BI | DAX | Data Modeling | Operational Analytics | Business Intelligence
 
-👤 Author
-
-Ajeet Yadav
-
-Aspiring Data Analyst | Business Analytics | Product & Operations Analytics
-
-Core Skills: SQL | Python | Power BI | DAX | Data Modeling | Operational Analytics | Business Intelligence
